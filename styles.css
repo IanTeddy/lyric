@@ -1,15 +1,15 @@
 /*Import font for main title*/
 @font-face {
     font-family: "rain-water";
-    src: url("fonts/RainwatersDemoRegular.ttf") ;
+    src: url("RainwatersDemoRegular.ttf") ;
 }
 @font-face {
     font-family: "beauty";
-    src: url("fonts/BeautyDemo.otf");
+    src: url("BeautyDemo.otf");
 }
 @font-face {
     font-family: "strong-girl";
-    src: url("fonts/StrongGirls DEMO.otf");
+    src: url("StrongGirls DEMO.otf");
 }
 
 /* Set background image */
