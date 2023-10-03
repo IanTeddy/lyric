@@ -1,0 +1,225 @@
+/*Import font for main title*/
+@font-face {
+    font-family: "rain-water";
+    src: url("fonts/RainwatersDemoRegular.ttf") ;
+}
+@font-face {
+    font-family: "beauty";
+    src: url("fonts/BeautyDemo.otf");
+}
+@font-face {
+    font-family: "strong-girl";
+    src: url("fonts/StrongGirls DEMO.otf");
+}
+
+/* Set background image */
+html {
+    background-image: url("images/rain.jpg");
+    background-size: cover;
+}
+
+body {
+    /* Make background gradation */
+    background: -moz-linear-gradient(to top,#497081 10%,#616F8A 20%,#5F8391 30%,#232F47);
+    background: -webkit-linear-gradient(to top,#497081 10%,#616F8A 20%,#5F8391 30%,#232F47);
+    background: linear-gradient(to top,#497081 10%,#616F8A 20%,#5F8391 30%,#232F47); 
+    background-repeat: no-repeat;
+    
+    color:whitesmoke;
+    width: 1000px;
+    margin: auto;
+    padding: 2vw 3vw;
+}
+
+
+/* Style header section */
+header {
+    margin-bottom: 2.5vw;
+    display:flex;
+    align-items: center;
+} 
+/* Change the image on hover */
+.album-img {
+    width: 17vw;
+    height: 17vw;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 12px #8f8e8e; 
+}
+.album-img img:nth-child(2){
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}  
+.album-img:hover img:nth-child(2){
+    opacity: 0;
+    transition: opacity 1s;
+  }
+
+  
+/* Song title and artist name */
+.song-title {
+    display: inline-block;
+    transform: translateY(15%);
+    margin-left: 3vw;
+}
+h1 {
+    font-family:rain-water, serif;
+    font-size: 35px;
+    text-shadow: 1px 1px 2px #717171;
+    margin: 0;
+    letter-spacing: 0.1em;
+}
+/* Change color on hover */
+h1:hover {
+    color: #1d273b;
+    text-shadow: 1px 1px 2px white;
+    transition:0.5s;
+}
+h2 {
+    margin:0 0 0 1.5vw;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+    color:  #e7c76d;
+    }
+
+/* Style main section */
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+#lyric {
+    width: 45%;
+}
+/* apply Google font */
+#lyric > p {
+    font-family:'Playfair Display', serif; 
+}
+
+/* Style some words that I want to emphasis */
+.rain {
+    color: #56bbff;
+    text-shadow: 1px 1px 2px grey;
+    font-size: 2em;
+}
+.rain:hover {
+    color: #18364a;
+    cursor: pointer;
+}
+
+.intro {
+    text-shadow: 1px 1px 2px rgb(226, 226, 226);
+}
+
+.mid-rain {
+    color: #0b3e5f;
+    text-shadow: 1px 1px 2px rgb(238, 237, 237);
+    font-size: 2em;
+    font-weight: 700;
+}
+.mid-rain:hover {
+    color: black;
+    cursor: pointer;
+    text-shadow: none;
+}
+.him {
+    color: rgb(245, 245, 101);
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px white;
+    font-weight: 400;
+}
+
+.him-sub {
+    color: rgb(239, 239, 186);
+    font-style: italic;
+    font-weight: bold;
+}
+
+.her {
+    color: #302a43;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 2px rgb(118, 167, 208);
+    font-weight: 700;
+}
+
+.her-sub {
+    color: #302a43;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.strong {
+    font-family: beauty, serif;
+    font-size: 3em;
+    color: #302a43 ;
+}
+.strong:hover {
+    color: yellow;
+    cursor: pointer;
+}
+
+.emphasis:hover {
+   font-family: strong-girl, serif;
+   font-style: italic;
+    cursor: pointer;
+} 
+
+
+
+/* Style photo garaly */
+#taylor-img {
+    width: 55%;
+    padding-top: 5vw;
+}
+
+#taylor-img img{
+    width: 25vw;
+    margin-bottom: 7vw;
+    box-shadow: 10px 7px 7px rgb(52, 52, 52);
+}
+
+.img-left {
+    float: left;
+}
+
+.img-right {
+    float: right;
+}
+
+/* Style footer */
+footer {
+    height: 15vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 1vw;
+    color: #c5c6c6;
+}
+
+/* "before"  pseudo-element */
+footer p::before {
+    content: '🖋️ ';
+}
+
+figure {
+    float: right;
+}
+
+figcaption {
+    color: #232F47;
+    font-weight: 700;
+}
+/* Spotify link */
+iframe {
+    border-radius:12px;
+    width: 30vw;
+    height: 15vw;
+}
